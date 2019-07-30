@@ -1,0 +1,43 @@
+//Yo soy
+//Reproducción de los números en el array
+
+//generar numeros aleatorios
+var aleatorios=[];
+for(var i=1 ; i<=100 ; i++){
+ 
+	     var numaleatorio=Math.floor(Math.random()*i);
+ 
+		aleatorios.push(numaleatorio);
+
+		}
+    
+	function burbuja(aleatorios)
+	{
+		for(var i=1;i<aleatorios.length;i++)
+		{
+			for(var j=0;j<(aleatorios.length-i);j++)
+			{
+				if(aleatorios[j]>des[j+1])
+				{
+					k=aleatorios[j+1];
+					aleatorios[j+1]=aleatorios[j];
+					aleatorios[j]=k;
+				}
+			}
+		}
+		return aleatorios;
+	}
+ 
+	console.log("Valores Iniciales");
+	for(var i=0;i<aleatorios.length;i++)
+	{
+		console.log(aleatorios[i]);
+	}
+ 
+	order=burbuja(aleatorios);
+ 
+	console.log("Valores ordenados");
+	for(i=0;i<order.length;i++)
+	{
+		console.log(order[i]);
+	}
